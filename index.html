@@ -466,9 +466,20 @@
             </ul>
             <ul class="flex items-center">
               <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4"
+                <label
+                  for="search-checkbox"
+                  class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4"
                   ><ion-icon class="text-lg font-semibold" name="search-outline"></ion-icon
-                ></a>
+                ></label>
+                <input type="checkbox" id="search-checkbox" hidden class="search-checkbox--input" />
+                <div class="search-base fixed top-0 left-0 w-full h-[64px] bg-white z-40">
+                  <div class="mx-12 flex items-center justify-between">
+                    <input type="text" placeholder="TYPE AND HIT ENTER.." class="w-full h-full p-5 outline-none" />
+                    <label for="search-checkbox" class="text-30 font-bold"
+                      ><ion-icon name="close-outline"></ion-icon
+                    ></label>
+                  </div>
+                </div>
               </li>
               <li class="relative mgi__header-nav">
                 <a href="" class="relative font-semibold uppercase text-sm hover:text-primary transition-colors p-4"

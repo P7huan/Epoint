@@ -68,3 +68,11 @@ li.active {
 .color-widget--input:checked ~ .color-widget {
   transform: translateX(0);
 }
+.search-base {
+  display: none;
+  opacity: 0;
+}
+.search-checkbox--input:checked ~ .search-base {
+  display: block;
+  opacity: 1;
+}
