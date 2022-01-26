@@ -7,6 +7,12 @@ body {
 .mgi__header-nav:hover .mgi__header-nav--dropdown {
   display: block;
 }
+.sticky {
+  background: #fff;
+  color: #222;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  transition: all 0.5s ease-in-out;
+}
 .side-nav__base {
   transform: translateX(100%);
   transition: all 0.4s ease-in-out;
@@ -93,4 +99,28 @@ li.active {
   left: -30px;
   font-size: 30px;
   font-weight: 600;
+}
+.flex-slider {
+  display: flex !important;
+  align-items: flex-start;
+}
+.cart-base {
+  display: none;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.open-cart--checkbox:checked ~ .cart-base {
+  display: block;
+  opacity: 1;
+}
+.open-contact--input:checked ~ .modal-form {
+  display: block;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+.open-contact--input:checked ~ .modal-overlay {
+  display: block;
+}
+.modal-form {
+  display: none;
 }
