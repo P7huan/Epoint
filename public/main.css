@@ -76,3 +76,18 @@ li.active {
   display: block;
   opacity: 1;
 }
+.slick-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.slick-next {
+  right: -30px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.slick-prev {
+  left: -30px;
+  font-size: 30px;
+  font-weight: 600;
+}

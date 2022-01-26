@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   </head>
   <body>
     <div class="mgi__main overflow-hidden">
@@ -776,8 +777,8 @@
           </p>
           <span class="absolute w-16 h-1 bottom-[-40px] left-[50%] translate-x-[-50%] bg-primary"></span>
         </div>
-        <div class="grid grid-cols-1 mt-20 gap-8 px:5 mx-auto md:grid-cols-2 lg:grid-cols-4 carousel">
-          <div class="carousel-item">
+        <div class="grid grid-cols-1 mt-20 px:5 mx-auto md:grid-cols-2 lg:grid-cols-4 carousel">
+          <div class="carousel-item mx-3">
             <div class="mb-5 px-5 lg:p-0">
               <img
                 src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/4.jpg"
@@ -790,7 +791,7 @@
               <p class="text-center text-16">Photography</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item mx-3">
             <div class="mb-5 px-5 lg:p-0">
               <img
                 src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/4.jpg"
@@ -803,7 +804,7 @@
               <p class="text-center text-16">Photography</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item mx-3">
             <div class="mb-5 px-5 lg:p-0">
               <img
                 src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/4.jpg"
@@ -816,7 +817,33 @@
               <p class="text-center text-16">Photography</p>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item mx-3">
+            <div class="mb-5 px-5 lg:p-0">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/4.jpg"
+                alt=""
+                class="mx-auto"
+              />
+            </div>
+            <div class="grid row-2 justify-center">
+              <h2 class="text-18 font-medium">Ohio Shopper</h2>
+              <p class="text-center text-16">Photography</p>
+            </div>
+          </div>
+          <div class="carousel-item mx-3">
+            <div class="mb-5 px-5 lg:p-0">
+              <img
+                src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/4.jpg"
+                alt=""
+                class="mx-auto"
+              />
+            </div>
+            <div class="grid row-2 justify-center">
+              <h2 class="text-18 font-medium">Ohio Shopper</h2>
+              <p class="text-center text-16">Photography</p>
+            </div>
+          </div>
+          <div class="carousel-item mx-3">
             <div class="mb-5 px-5 lg:p-0">
               <img
                 src="http://zozothemes.com/html/epoint/demo/images/content/portfolio/set3/4.jpg"
@@ -849,7 +876,17 @@
           <h1 class="text-center font-medium text-36 text-[#333]">What Clients Says?</h1>
           <span class="absolute bottom-[-30px] left-[50%] translate-x-[-50%] w-16 h-1 bg-primary"></span>
         </div>
-        <div class="grid grid-cols-1 gap-5 mt-16 md:grid-cols-2 lg:grid-cols-3 py-9">
+        <div class="grid grid-cols-1 gap-5 mt-16 md:grid-cols-2 lg:grid-cols-3 py-9 three-slider">
+          <div class="flex items-start">
+            <div class="mr-6"><ion-icon class="text-30 font-semibold" name="barcode-outline"></ion-icon></div>
+            <div>
+              <p class="text-18 font-light text-gray-600 leading-7 mb-6">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <h6 class="font-semibold text-gray-800 mb-[6px]">Sue San</h6>
+              <span class="text-14 text-gray-400">Google</span>
+            </div>
+          </div>
           <div class="flex items-start">
             <div class="mr-6"><ion-icon class="text-30 font-semibold" name="barcode-outline"></ion-icon></div>
             <div>
@@ -881,25 +918,17 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-8 mt-10 md:grid-cols-4 lg:grid-cols-6">
-          <div class="max-w-[130px]">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/9.png" alt="" class="w-full" />
-          </div>
-          <div class="max-w-[130px]">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/6.png" alt="" class="w-full" />
-          </div>
-          <div class="max-w-[130px]">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="" class="w-full" />
-          </div>
-          <div class="max-w-[130px]">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/4.png" alt="" class="w-full" />
-          </div>
-          <div class="max-w-[130px]">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/2.png" alt="" class="w-full" />
-          </div>
-          <div class="max-w-[130px]">
-            <img src="http://zozothemes.com/html/epoint/demo/images/content/client/3.png" alt="" class="w-full" />
-          </div>
+        <div class="grid grid-cols-3 gap-8 mt-10 md:grid-cols-4 lg:grid-cols-7 logo-slider">
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/6.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/6.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/9.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/5.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/4.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/2.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/3.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/3.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/3.png" alt="" class="w-24" />
+          <img src="http://zozothemes.com/html/epoint/demo/images/content/client/3.png" alt="" class="w-24" />
         </div>
       </section>
       <section class="py-20 bg-[#f7f7f7]">
@@ -912,8 +941,8 @@
             </p>
             <span class="absolute w-16 h-1 bottom-[-40px] left-[50%] translate-x-[-50%] bg-primary"></span>
           </div>
-          <div class="grid grid-col-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
-            <div>
+          <div class="grid grid-col-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-20 three-slider">
+            <div class="mx-3">
               <a href="" class="mb-8 block">
                 <img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t3.jpg" alt="" class="w-full" />
               </a>
@@ -924,7 +953,7 @@
                 <span class="text-12 text-gray-400">3rd Aug, 2016</span>
               </div>
             </div>
-            <div>
+            <div class="mx-3">
               <a href="" class="mb-8 block">
                 <img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t3.jpg" alt="" class="w-full" />
               </a>
@@ -935,7 +964,18 @@
                 <span class="text-12 text-gray-400">3rd Aug, 2016</span>
               </div>
             </div>
-            <div>
+            <div class="mx-3">
+              <a href="" class="mb-8 block">
+                <img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t3.jpg" alt="" class="w-full" />
+              </a>
+              <div>
+                <a href="" class="block group">
+                  <h2 class="font-medium text-18 group-hover:text-primary">Changlog for Zozothemes</h2>
+                </a>
+                <span class="text-12 text-gray-400">3rd Aug, 2016</span>
+              </div>
+            </div>
+            <div class="mx-3">
               <a href="" class="mb-8 block">
                 <img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t3.jpg" alt="" class="w-full" />
               </a>
@@ -1005,13 +1045,148 @@
         </div>
       </div>
     </div>
-    <footer></footer>
+    <footer class="bg-[#171717]">
+      <div class="py-20 px-6">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="" />
+            <p class="mt-8 text-14 font-normal text-[#aeadad] leading-7">
+              We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and
+              friendly support gives ultimate website to boom your business.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-20 text-[#aeadad]">OUR OFFICE</h4>
+            <div class="flex items-start text-[#aeadad] mt-8">
+              <ion-icon class="text-20 mr-5 md:text-40" name="location-outline"></ion-icon>
+              <p class="text-14 leading-8">Zozotheme.com No. 12, Ribbon Building, Walse street, Australia - 30001.</p>
+            </div>
+            <div class="flex items-start text-[#aeadad]">
+              <ion-icon class="text-20 mr-5" name="call-outline"></ion-icon>
+              <p class="text-14 leading-8">+0 (123) 456-78-90</p>
+            </div>
+            <div class="flex items-center text-[#aeadad]">
+              <ion-icon class="text-20 mr-5" name="mail-outline"></ion-icon>
+              <a href="" class="text-14 leading-8 text-primary hover:text-[#aeadad]">support@zozothemes.com</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-20 text-[#aeadad]">QUICK LINK</h4>
+            <div class="grid grid-cols-2 mt-8">
+              <ul>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-20 text-[#aeadad]">EMAIL NEWSLETTER</h4>
+            <p class="my-8 text-14 text-[#aeadad]">
+              Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:
+            </p>
+            <div class="bg-primary border border-primary flex items-center">
+              <input
+                type="text"
+                placeholder="Enter your Email"
+                class="bg-[#171717] outline-none text-12 p-3 text-white w-full"
+              />
+              <button><ion-icon name="enter-outline" class="text-22 text-white px-4"></ion-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-6 border-t-[1px] border-[#aeadad]">
+        <div class="flex flex-col items-center max-w-6xl mx-auto md:flex-row md:justify-between md:items-center">
+          <p class="text-12 text-white font-light mb-7">
+            © 2022 ePoint. All Rights Reserved. <a href="" class="mx-2 hover:text-primary">Terms & Conditions</a> |
+            <a href="" class="mx-2 hover:text-primary">Cookie policy</a>
+          </p>
+          <ul class="flex">
+            <li class="mx-2">
+              <a href="" class="text-14 text-white hover:text-primary">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="" class="text-14 text-white hover:text-primary">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="" class="text-14 text-white hover:text-primary">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="" class="text-14 text-white hover:text-primary">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="" class="text-14 text-white hover:text-primary">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slick.js"></script>
   </body>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/slick.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </html>
