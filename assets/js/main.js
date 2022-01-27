@@ -1,19 +1,14 @@
 var slideIndex = 1
 showSlides(slideIndex)
-
-// Next/previous controls
 function plusSlides(n) {
   showSlides((slideIndex += n))
 }
-
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n))
 }
-
 function showSlides(n) {
   var i
-  var slides = document.getElementsByClassName('mySlides')
+  var slides = document.getElementsByClassName('mgi_top-slides')
   var dots = document.getElementsByClassName('dot')
   if (n > slides.length) {
     slideIndex = 1
@@ -35,13 +30,9 @@ window.onscroll = function () {
   myFunction()
 }
 
-// Get the header
-var header = document.getElementById('myHeader')
-
-// Get the offset position of the navbar
+// Header Sticky
+var header = document.getElementById('mgi_Header')
 var sticky = header.offsetTop
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add('sticky')
@@ -63,3 +54,4 @@ $(window).scroll(function () {
     $('.logo-light').fadeIn()
   }
 })
+// End Header

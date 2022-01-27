@@ -20,17 +20,17 @@
   <body data-width="1040" data-height="768">
     <div class="mgi__main overflow-hidden">
       <header
-        id="myHeader"
+        id="mgi_Header"
         class="fixed transition-all duration-500 top-0 left-0 right-0 h-16 text-white max-w-full z-10"
       >
         <div class="mx-8 max-w-full flex items-center justify-between h-full lg:max-w-6xl lg:mx-auto">
-          <div class="flex items-center">
+          <div class="flex">
             <div class="lg:hidden">
-              <label for="nav_mobile" class="text-black text-2xl mr-4 h-full relative top-1 cursor-pointer"
+              <label for="nav_mobile" class="text-2xl mr-4 h-full relative top-1 cursor-pointer"
                 ><ion-icon name="menu-outline"></ion-icon
               ></label>
               <input type="checkbox" class="open-nav__mobile" hidden id="nav_mobile" />
-              <div class="nav__mobile-base fixed top-0 bottom-0 left-0 w-[80%] bg-[#222] z-10 px-4 py-2">
+              <div class="mgi_nav__mobile-base fixed top-0 bottom-0 left-0 w-[80%] bg-[#222] z-10 px-4 py-2">
                 <div class="flex items-center justify-between">
                   <span class="text-gray-300 text-20">MENU</span>
                   <label
@@ -140,332 +140,255 @@
                 </ul>
               </div>
             </div>
-            <a href="" class="logo-dark hidden"
-              ><img class="w-27 m-auto block" src="http://zozothemes.com/html/epoint/demo/images/logo.png" alt=""
-            /></a>
-            <a href="" class="logo-light absolute"
-              ><img class="w-27 m-auto block" src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt=""
-            /></a>
+            <div class="flex items-center">
+              <a href="" class="logo-dark hidden"
+                ><img class="w-27 m-auto block" src="http://zozothemes.com/html/epoint/demo/images/logo.png" alt=""
+              /></a>
+              <a href="" class="logo-light absolute"
+                ><img
+                  class="w-27 m-auto block"
+                  src="http://zozothemes.com/html/epoint/demo/images/logo-light.png"
+                  alt=""
+              /></a>
+            </div>
           </div>
           <div class="flex items-center">
             <ul class="hidden items-center lg:flex">
-              <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4">Home</a>
-                <ul class="mgi__header-nav--dropdown hidden absolute top-11 left-0 bg-black p-4 w-48">
+              <li class="relative mgi_header__nav">
+                <a href="" class="mgi_header__nav-link">Home</a>
+                <ul class="mgi_header__nav-dropdown">
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm font-extrabold" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                 </ul>
               </li>
-              <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4">Header</a>
-                <ul class="mgi__header-nav--dropdown hidden absolute top-11 left-0 bg-black p-4 w-48">
+              <li class="relative mgi_header__nav">
+                <a href="" class="mgi_header__nav-link">Header</a>
+                <ul class="mgi_header__nav-dropdown">
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                 </ul>
               </li>
-              <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4">Pages</a>
-                <ul class="mgi__header-nav--dropdown hidden absolute top-11 left-0 bg-black p-4 w-48">
+              <li class="relative mgi_header__nav">
+                <a href="" class="mgi_header__nav-link">Pages</a>
+                <ul class="mgi_header__nav-dropdown">
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                 </ul>
               </li>
-              <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4">Feature</a>
-                <ul class="mgi__header-nav--dropdown hidden absolute top-11 left-0 bg-black p-4 w-48">
+              <li class="relative mgi_header__nav">
+                <a href="" class="mgi_header__nav-link">Feature</a>
+                <ul class="mgi_header__nav-dropdown">
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                 </ul>
               </li>
-              <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4"
-                  >Portfolio</a
-                >
-                <ul class="mgi__header-nav--dropdown hidden absolute top-11 left-0 bg-black p-4 w-48">
+              <li class="relative mgi_header__nav">
+                <a href="" class="mgi_header__nav-link">Portfolio</a>
+                <ul class="mgi_header__nav-dropdown">
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                 </ul>
               </li>
-              <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4">Blog</a>
-                <ul class="mgi__header-nav--dropdown hidden absolute top-11 left-0 bg-black p-4 w-48">
+              <li class="relative mgi_header__nav">
+                <a href="" class="mgi_header__nav-link">Blog</a>
+                <ul class="mgi_header__nav-dropdown">
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                 </ul>
               </li>
-              <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4">Shop</a>
-                <ul class="mgi__header-nav--dropdown hidden absolute top-11 left-0 bg-black p-4 w-48">
+              <li class="relative mgi_header__nav">
+                <a href="" class="mgi_header__nav-link">Shop</a>
+                <ul class="mgi_header__nav-dropdown">
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                 </ul>
               </li>
-              <li class="relative mgi__header-nav">
-                <a href="" class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4">Elements</a>
-                <ul class="mgi__header-nav--dropdown hidden absolute top-11 left-0 bg-black p-4 w-48">
+              <li class="relative mgi_header__nav">
+                <a href="" class="mgi_header__nav-link">Elements</a>
+                <ul class="mgi_header__nav-dropdown">
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
                   <li>
-                    <a
-                      class="flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold"
-                      href=""
+                    <a class="mgi_header__nav-item--link" href=""
                       >Home corporate <ion-icon class="text-sm" name="chevron-forward-outline"></ion-icon
                     ></a>
                   </li>
@@ -473,26 +396,22 @@
               </li>
             </ul>
             <ul class="flex items-center">
-              <li class="relative mgi__header-nav">
-                <label
-                  for="search-checkbox"
-                  class="font-semibold uppercase text-sm hover:text-primary transition-colors p-4"
+              <li class="relative mgi_header__nav">
+                <label for="search-checkbox" class="mgi_header__nav-link cursor-pointer"
                   ><ion-icon class="text-lg font-semibold" name="search-outline"></ion-icon
                 ></label>
                 <input type="checkbox" id="search-checkbox" hidden class="search-checkbox--input" />
                 <div class="search-base fixed top-0 left-0 w-full h-[64px] bg-white z-40">
                   <div class="mx-12 flex items-center justify-between">
                     <input type="text" placeholder="TYPE AND HIT ENTER.." class="w-full h-full p-5 outline-none" />
-                    <label for="search-checkbox" class="text-30 font-bold"
+                    <label for="search-checkbox" class="text-30 font-bold cursor-pointer"
                       ><ion-icon name="close-outline"></ion-icon
                     ></label>
                   </div>
                 </div>
               </li>
-              <li class="relative mgi__header-nav">
-                <label
-                  for="open-cart"
-                  class="relative font-semibold uppercase text-sm hover:text-primary transition-colors p-4 cursor-pointer"
+              <li class="relative mgi_header__nav">
+                <label for="open-cart" class="relative mgi_header__nav-link cursor-pointer"
                   ><ion-icon class="text-lg font-semibold" name="bag-outline"></ion-icon>
                   <span
                     class="absolute top-1 right-2 w-4 h-4 text-center text-xs text-white rounded-xl block bg-primary"
@@ -514,9 +433,7 @@
                         >
                         <span class="text-white text-12">23$</span>
                       </div>
-                      <button
-                        class="font-bold text-16 text-white bg-red-800 w-5 h-5 flex items-center justify-center rounded-full"
-                      >
+                      <button class="mgi_header__cart-item--btn">
                         <ion-icon name="close-outline"></ion-icon>
                       </button>
                     </div>
@@ -534,9 +451,7 @@
                         >
                         <span class="text-white text-12">23$</span>
                       </div>
-                      <button
-                        class="font-bold text-16 text-white bg-red-800 w-5 h-5 flex items-center justify-center rounded-full"
-                      >
+                      <button class="mgi_header__cart-item--btn">
                         <ion-icon name="close-outline"></ion-icon>
                       </button>
                     </div>
@@ -554,14 +469,12 @@
                         >
                         <span class="text-white text-12">23$</span>
                       </div>
-                      <button
-                        class="font-bold text-16 text-white bg-red-800 w-5 h-5 flex items-center justify-center rounded-full"
-                      >
+                      <button class="mgi_header__cart-item--btn">
                         <ion-icon name="close-outline"></ion-icon>
                       </button>
                     </div>
                   </div>
-                  <div class="flex items-center justify-between border-t-[1px] border-white pt-4">
+                  <div class="mgi_header__cart-item">
                     <span class="text-white text-16">£22.00</span>
                     <a href="" class="btn-primary rounded-md px-5 text-13 font-normal flex items-center"
                       ><ion-icon class="text-20 mr-2" name="cart-outline"></ion-icon> View cart</a
@@ -569,17 +482,17 @@
                   </div>
                 </div>
               </li>
-              <li class="relative mgi__header-nav">
+              <li class="relative mgi_header__nav">
                 <label
-                  for="side-nav"
-                  class="cursor-pointer side-nav__label border border-gray-300 font-semibold uppercase text-sm hover:text-primary transition-colors p-2 flex items-center ml-4"
+                  for="mgi_side-nav"
+                  class="cursor-pointer mgi_side-nav__label border border-gray-300 font-semibold uppercase text-sm hover:text-primary transition-colors p-2 flex items-center ml-4"
                   ><ion-icon class="text-lg font-semibold" name="menu-outline"></ion-icon
                 ></label>
-                <input type="checkbox" hidden class="side-nav__open" id="side-nav" />
-                <div class="side-nav__base fixed w-[370px] bg-[#222] top-0 h-full right-0 p-5 overflow-y-auto z-10">
+                <input type="checkbox" hidden class="mgi_side-nav__open" id="mgi_side-nav" />
+                <div class="mgi_side-nav__base fixed w-[370px] bg-[#222] top-0 h-full right-0 p-5 overflow-y-auto z-10">
                   <label
                     class="cursor-pointer bg-primary w-10 h-10 inline-flex items-center justify-center rounded-3xl"
-                    for="side-nav"
+                    for="mgi_side-nav"
                     ><ion-icon class="text-2xl text-white" name="close-outline"></ion-icon
                   ></label>
                   <div class="my-6">
@@ -635,34 +548,22 @@
                   <div class="mb-[30px]">
                     <h5 class="font-medium text-20 text-white mb-4">Social Share</h5>
                     <ul class="flex items-center flex-wrap">
-                      <li
-                        class="w-[40px] h-[40px] mr-2 rounded-full border border-white flex items-center justify-center hover:bg-primary"
-                      >
+                      <li class="mgi_side-nav__social">
                         <ion-icon class="text-[22px] text-white" name="logo-facebook"></ion-icon>
                       </li>
-                      <li
-                        class="w-[40px] h-[40px] mr-2 rounded-full border border-white flex items-center justify-center hover:bg-primary"
-                      >
+                      <li class="mgi_side-nav__social">
                         <ion-icon class="text-[22px] text-white" name="logo-twitter"></ion-icon>
                       </li>
-                      <li
-                        class="w-[40px] h-[40px] mr-2 rounded-full border border-white flex items-center justify-center hover:bg-primary"
-                      >
+                      <li class="mgi_side-nav__social">
                         <ion-icon class="text-[22px] text-white" name="logo-linkedin"></ion-icon>
                       </li>
-                      <li
-                        class="w-[40px] h-[40px] mr-2 rounded-full border border-white flex items-center justify-center hover:bg-primary"
-                      >
+                      <li class="mgi_side-nav__social">
                         <ion-icon class="text-[22px] text-white" name="logo-pinterest"></ion-icon>
                       </li>
-                      <li
-                        class="w-[40px] h-[40px] mr-2 rounded-full border border-white flex items-center justify-center hover:bg-primary"
-                      >
+                      <li class="mgi_side-nav__social">
                         <ion-icon class="text-[22px] text-white" name="logo-google"></ion-icon>
                       </li>
-                      <li
-                        class="w-[40px] h-[40px] mr-2 rounded-full border border-white flex items-center justify-center hover:bg-primary"
-                      >
+                      <li class="mgi_side-nav__social">
                         <ion-icon class="text-[22px] text-white" name="logo-youtube"></ion-icon>
                       </li>
                     </ul>
@@ -675,51 +576,60 @@
       </header>
       <!-- Silder -->
       <section class="banner relative w-full h-[400px] md:h-[500px]">
-        <div class="mySlides flex flex-col items-center justify-center h-full px-4 md:mx-[70px]">
-          <h1 class="text-white text-[48px] font-extrabold uppercase mb-5 text-center md:text-8xl">We are Powerful</h1>
-          <p class="hidden leading-8 font-medium text-white mb-7 text-center md:block">
+        <div class="mgi_top-slides">
+          <h1 class="mgi_top-slides__heading">We are Powerful</h1>
+          <p class="mgi_top-slides__desc">
             We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and
             friendly support gives ultimate website to boom your business.
           </p>
-          <a href="" class="btn-primary">LEARN MORE</a>
+          <a href="" class="btn-primary mgi_top-slides__btn-link">LEARN MORE</a>
         </div>
-        <div class="mySlides flex flex-col items-center justify-center h-full px-4 md:mx-[70px]">
-          <h1 class="text-white text-[48px] font-extrabold uppercase mb-5 text-center md:text-8xl">We are Simple</h1>
-          <p class="hidden leading-8 font-medium text-white mb-7 text-center md:block">
+        <div class="mgi_top-slides">
+          <h1 class="mgi_top-slides__heading">We are Simple</h1>
+          <p class="mgi_top-slides__desc">
             We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and
             friendly support gives ultimate website to boom your business.
           </p>
-          <a href="" class="btn-primary">LEARN MORE</a>
+          <a href="" class="btn-primary mgi_top-slides__btn-link">LEARN MORE</a>
         </div>
-        <div class="mySlides flex flex-col items-center justify-center h-full px-4 md:mx-[70px]">
-          <h1 class="text-white text-[48px] font-extrabold uppercase mb-5 text-center md:text-8xl">We Are Creative</h1>
-          <p class="hidden leading-8 font-medium text-white mb-7 text-center md:block">
+        <div class="mgi_top-slides">
+          <h1 class="mgi_top-slides__heading">We Are Creative</h1>
+          <p class="mgi_top-slides__desc">
             We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and
             friendly support gives ultimate website to boom your business.
           </p>
-          <a href="" class="btn-primary">LEARN MORE</a>
+          <a href="" class="btn-primary mgi_top-slides__btn-link">LEARN MORE</a>
         </div>
         <button
-          class="slider__btn-left prev absolute top-[50%] left-[20px] w-[40px] h-[40px] bg-primary rounded-full flex items-center justify-center hover:bg-blue-900"
+          class="mgi_top-slider__btn-left prev absolute top-[50%] left-[20px] w-[40px] h-[40px] bg-primary rounded-full flex items-center justify-center hover:bg-blue-900"
           onclick="plusSlides(-1)"
         >
           <ion-icon class="text-white text-22" name="chevron-back-sharp"></ion-icon>
         </button>
         <button
-          class="slider__btn-right next absolute top-[50%] right-[20px] w-[40px] h-[40px] bg-primary rounded-full flex items-center justify-center hover:bg-blue-900"
+          class="mgi_top-slider__btn-right next absolute top-[50%] right-[20px] w-[40px] h-[40px] bg-primary rounded-full flex items-center justify-center hover:bg-blue-900"
           onclick="plusSlides(1)"
         >
           <ion-icon class="text-white text-22" name="chevron-forward-sharp"></ion-icon>
         </button>
-        <ul class="absolute bottom-8 left-[50%] translate-x-[-50%] flex">
-          <li class="dot p-1 border border-white rounded-full mx-3 group" onclick="currentSlide(1)">
-            <span class="cursor-pointer w-[8px] h-[8px] rounded-full bg-white block group-hover:bg-primary"></span>
+        <ul class="absolute bottom-8 left-[50%] translate-x-[-50%] flex items-center">
+          <li
+            class="dot flex items-center justify-center rounded-full mx-3 hover:border-2 boder-white"
+            onclick="currentSlide(1)"
+          >
+            <span class="cursor-pointer w-[8px] h-[8px] m-2 rounded-full bg-white block"></span>
           </li>
-          <li class="dot p-1 border border-white rounded-full mx-3 group" onclick="currentSlide(2)">
-            <span class="cursor-pointer w-[8px] h-[8px] rounded-full bg-white block group-hover:bg-primary"></span>
+          <li
+            class="dot flex items-center justify-center rounded-full mx-3 hover:border-2 boder-white"
+            onclick="currentSlide(2)"
+          >
+            <span class="cursor-pointer w-[8px] h-[8px] m-2 rounded-full bg-white block"></span>
           </li>
-          <li class="dot p-1 border border-white rounded-full mx-3 group" onclick="currentSlide(3)">
-            <span class="cursor-pointer w-[8px] h-[8px] rounded-full bg-white block group-hover:bg-primary"></span>
+          <li
+            class="dot flex items-center justify-center rounded-full mx-3 hover:border-2 boder-white"
+            onclick="currentSlide(3)"
+          >
+            <span class="cursor-pointer w-[8px] h-[8px] m-2 rounded-full bg-white block"></span>
           </li>
         </ul>
       </section>
@@ -751,11 +661,11 @@
             </div>
             <div class="flex items-center justify-start">
               <ion-icon class="text-40 text-primary mr-3" name="timer-outline"></ion-icon>
-              <h4 class="font-medium text-18">Analysis</h4>
+              <h4 class="font-medium text-18">Design</h4>
             </div>
             <div class="flex items-center justify-start">
               <ion-icon class="text-40 text-primary mr-3" name="timer-outline"></ion-icon>
-              <h4 class="font-medium text-18">Analysis</h4>
+              <h4 class="font-medium text-18">Launch</h4>
             </div>
           </div>
         </div>
@@ -767,95 +677,71 @@
         </h1>
         <div data-aos="fade-up" data-aos-duration="3000" class="grid grid-cols-1 gap-10 md:grid-cols-3">
           <div>
-            <div class="w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center mb-5">
+            <div class="mgi_services__item">
               <ion-icon class="text-30 text-white" name="logo-tux"></ion-icon>
             </div>
-            <h2
-              class="relative text-18 font-medium mb-5 after:content-[''] after:absolute after:bottom-[-20px] after:left-0 after:w-[60px] after:border-2 after:border-primary"
-            >
-              Creative Design
-            </h2>
-            <p class="mt-12 font-light text-14 text-gray-700 leading-6">
+            <h2 class="mgi_services__item-title">Creative Design</h2>
+            <p class="mgi_services__item-content">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
           </div>
           <div>
-            <div class="w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center mb-5">
+            <div class="mgi_services__item">
               <ion-icon class="text-30 text-white" name="logo-tux"></ion-icon>
             </div>
-            <h2
-              class="relative text-18 font-medium mb-5 after:content-[''] after:absolute after:bottom-[-20px] after:left-0 after:w-[60px] after:border-2 after:border-primary"
-            >
-              Creative Design
-            </h2>
-            <p class="mt-12 font-light text-14 text-gray-700 leading-6">
+            <h2 class="mgi_services__item-title">Creative Design</h2>
+            <p class="mgi_services__item-content">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
           </div>
           <div>
-            <div class="w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center mb-5">
+            <div class="mgi_services__item">
               <ion-icon class="text-30 text-white" name="logo-tux"></ion-icon>
             </div>
-            <h2
-              class="relative text-18 font-medium mb-5 after:content-[''] after:absolute after:bottom-[-20px] after:left-0 after:w-[60px] after:border-2 after:border-primary"
-            >
-              Creative Design
-            </h2>
-            <p class="mt-12 font-light text-14 text-gray-700 leading-6">
+            <h2 class="mgi_services__item-title">Creative Design</h2>
+            <p class="mgi_services__item-content">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
           </div>
           <div>
-            <div class="w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center mb-5">
+            <div class="mgi_services__item">
               <ion-icon class="text-30 text-white" name="logo-tux"></ion-icon>
             </div>
-            <h2
-              class="relative text-18 font-medium mb-5 after:content-[''] after:absolute after:bottom-[-20px] after:left-0 after:w-[60px] after:border-2 after:border-primary"
-            >
-              Creative Design
-            </h2>
-            <p class="mt-12 font-light text-14 text-gray-700 leading-6">
+            <h2 class="mgi_services__item-title">Creative Design</h2>
+            <p class="mgi_services__item-content">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
           </div>
           <div>
-            <div class="w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center mb-5">
+            <div class="mgi_services__item">
               <ion-icon class="text-30 text-white" name="logo-tux"></ion-icon>
             </div>
-            <h2
-              class="relative text-18 font-medium mb-5 after:content-[''] after:absolute after:bottom-[-20px] after:left-0 after:w-[60px] after:border-2 after:border-primary"
-            >
-              Creative Design
-            </h2>
-            <p class="mt-12 font-light text-14 text-gray-700 leading-6">
+            <h2 class="mgi_services__item-title">Creative Design</h2>
+            <p class="mgi_services__item-content">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
           </div>
           <div>
-            <div class="w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center mb-5">
+            <div class="mgi_services__item">
               <ion-icon class="text-30 text-white" name="logo-tux"></ion-icon>
             </div>
-            <h2
-              class="relative text-18 font-medium mb-5 after:content-[''] after:absolute after:bottom-[-20px] after:left-0 after:w-[60px] after:border-2 after:border-primary"
-            >
-              Creative Design
-            </h2>
-            <p class="mt-12 font-light text-14 text-gray-700 leading-6">
+            <h2 class="mgi_services__item-title">Creative Design</h2>
+            <p class="mgi_services__item-content">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
             </p>
           </div>
         </div>
       </section>
-      <section class="container max-w-6xl mx-auto py-20">
+      <section class="carousel__container container max-w-6xl mx-auto py-20">
         <div class="relative">
           <h1 class="text-center text-[36px] text-gray-900">Our Latest Projects</h1>
           <p class="text-center text-[#333] text-14">
             We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email
             Templates.
           </p>
-          <span class="absolute w-16 h-1 bottom-[-40px] left-[50%] translate-x-[-50%] bg-primary"></span>
+          <span class="mgi_underline__heading"></span>
         </div>
-        <div class="grid grid-cols-1 mt-20 px:5 mx-auto md:grid-cols-2 lg:grid-cols-4 carousel">
+        <div class="grid grid-cols-1 mt-20 px:5 mx-auto md:grid-cols-2 overflow-hidden lg:grid-cols-4 carousel">
           <div class="carousel-item mx-3">
             <div class="mb-5 px-5 lg:p-0">
               <img
@@ -953,12 +839,12 @@
       <section class="max-w-6xl mx-auto my-20 px-5">
         <div class="relative">
           <h1 class="text-center font-medium text-36 text-[#333]">What Clients Says?</h1>
-          <span class="absolute bottom-[-30px] left-[50%] translate-x-[-50%] w-16 h-1 bg-primary"></span>
+          <span class="mgi_underline__heading"></span>
         </div>
-        <div data-aos="fade-down" class="grid grid-cols-1 gap-5 mt-16 md:grid-cols-2 lg:grid-cols-3 py-9 three-slider">
+        <div data-aos="fade-down" class="grid grid-cols-1 gap-5 mt-16 md:grid-cols-2 lg:grid-cols-3 py-9">
           <div class="flex-slider">
             <div class="mr-6">
-              <ion-icon class="text-30 font-semibold" name="chatbubble-ellipses-outline"></ion-icon>
+              <span class="text-7xl font-semibold">"</span>
             </div>
             <div>
               <p class="text-18 font-light text-gray-600 leading-7 mb-6">
@@ -970,7 +856,7 @@
           </div>
           <div class="flex-slider">
             <div class="mr-6">
-              <ion-icon class="text-30 font-semibold" name="chatbubble-ellipses-outline"></ion-icon>
+              <span class="text-7xl font-semibold">"</span>
             </div>
             <div>
               <p class="text-18 font-light text-gray-600 leading-7 mb-6">
@@ -982,7 +868,7 @@
           </div>
           <div class="flex-slider">
             <div class="mr-6">
-              <ion-icon class="text-30 font-semibold" name="chatbubble-ellipses-outline"></ion-icon>
+              <span class="text-7xl font-semibold">"</span>
             </div>
             <div>
               <p class="text-18 font-light text-gray-600 leading-7 mb-6">
@@ -994,7 +880,7 @@
           </div>
           <div class="flex-slider">
             <div class="mr-6">
-              <ion-icon class="text-30 font-semibold" name="chatbubble-ellipses-outline"></ion-icon>
+              <span class="text-7xl font-semibold">"</span>
             </div>
             <div>
               <p class="text-18 font-light text-gray-600 leading-7 mb-6">
@@ -1026,9 +912,9 @@
               We Build Awesome and Beautiful Premium HTML, Wordpress, Magento, Joomla, E-commerce Themes and Email
               Templates.
             </p>
-            <span class="absolute w-16 h-1 bottom-[-40px] left-[50%] translate-x-[-50%] bg-primary"></span>
+            <span class="mgi_underline__heading"></span>
           </div>
-          <div class="grid grid-col-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-20 three-slider">
+          <div class="grid grid-col-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-20">
             <div class="mx-3">
               <a href="" class="mb-8 block">
                 <img src="http://zozothemes.com/html/epoint/demo/images/content/blog/t3.jpg" alt="" class="w-full" />
@@ -1081,79 +967,79 @@
           <div class="max-w-6xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div>
               <img src="http://zozothemes.com/html/epoint/demo/images/logo-light.png" alt="" />
-              <p class="mt-8 text-14 font-normal text-[#aeadad] leading-7">
+              <p class="mt-8 text-14 font-normal text-gray_primary leading-7">
                 We believe in Simple, Creative & Flexible Design Standards. Unlimited features, elements and fast and
                 friendly support gives ultimate website to boom your business.
               </p>
             </div>
             <div>
-              <h4 class="text-20 text-[#aeadad]">OUR OFFICE</h4>
-              <div class="flex items-start text-[#aeadad] mt-8">
+              <h4 class="text-20 text-gray_primary">OUR OFFICE</h4>
+              <div class="flex items-start text-gray_primary mt-8">
                 <ion-icon class="text-20 mr-5 md:text-40" name="location-outline"></ion-icon>
                 <p class="text-14 leading-8">Zozotheme.com No. 12, Ribbon Building, Walse street, Australia - 30001.</p>
               </div>
-              <div class="flex items-start text-[#aeadad]">
+              <div class="flex items-start text-gray_primary">
                 <ion-icon class="text-20 mr-5" name="call-outline"></ion-icon>
                 <p class="text-14 leading-8">+0 (123) 456-78-90</p>
               </div>
-              <div class="flex items-center text-[#aeadad]">
+              <div class="flex items-center text-gray_primary">
                 <ion-icon class="text-20 mr-5" name="mail-outline"></ion-icon>
-                <a href="" class="text-14 leading-8 text-primary hover:text-[#aeadad]">support@zozothemes.com</a>
+                <a href="" class="text-14 leading-8 text-primary hover:text-gray_primary">support@zozothemes.com</a>
               </div>
             </div>
             <div>
-              <h4 class="text-20 text-[#aeadad]">QUICK LINK</h4>
+              <h4 class="text-20 text-gray_primary">QUICK LINK</h4>
               <div class="grid grid-cols-2 mt-8">
                 <ul>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                 </ul>
                 <ul>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
                   <li>
-                    <a href="" class="text-[#aeadad] text-13 p-[6px] flex items-center hover:text-primary"
+                    <a href="" class="mgi_footer__link"
                       ><ion-icon class="mx-2" name="chevron-forward-outline"></ion-icon> Home</a
                     >
                   </li>
@@ -1161,8 +1047,8 @@
               </div>
             </div>
             <div>
-              <h4 class="text-20 text-[#aeadad]">EMAIL NEWSLETTER</h4>
-              <p class="my-8 text-14 text-[#aeadad]">
+              <h4 class="text-20 text-gray_primary">EMAIL NEWSLETTER</h4>
+              <p class="my-8 text-14 text-gray_primary">
                 Subscribe to Our Newsletter to get Important News, Amazing Offers & Inside Scoops:
               </p>
               <div class="bg-primary border border-primary flex items-center">
@@ -1176,7 +1062,7 @@
             </div>
           </div>
         </div>
-        <div class="py-6 border-t-[1px] border-[#aeadad]">
+        <div class="py-6 border-t-[1px] border-gray_primary">
           <div class="flex flex-col items-center max-w-6xl mx-auto md:flex-row md:justify-between md:items-center">
             <p class="text-12 text-white font-light mb-7 md:mb-0">
               © 2022 ePoint. All Rights Reserved. <a href="" class="mx-2 hover:text-primary">Terms & Conditions</a> |
@@ -1184,27 +1070,27 @@
             </p>
             <ul class="flex">
               <li class="mx-2">
-                <a href="" class="text-14 text-white hover:text-primary">
+                <a href="" class="mgi_bottom__footer-social">
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li>
               <li class="mx-2">
-                <a href="" class="text-14 text-white hover:text-primary">
+                <a href="" class="mgi_bottom__footer-social">
                   <ion-icon name="logo-youtube"></ion-icon>
                 </a>
               </li>
               <li class="mx-2">
-                <a href="" class="text-14 text-white hover:text-primary">
+                <a href="" class="mgi_bottom__footer-social">
                   <ion-icon name="logo-twitter"></ion-icon>
                 </a>
               </li>
               <li class="mx-2">
-                <a href="" class="text-14 text-white hover:text-primary">
+                <a href="" class="mgi_bottom__footer-social">
                   <ion-icon name="logo-pinterest"></ion-icon>
                 </a>
               </li>
               <li class="mx-2">
-                <a href="" class="text-14 text-white hover:text-primary">
+                <a href="" class="mgi_bottom__footer-social">
                   <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
               </li>
@@ -1219,9 +1105,9 @@
           <ion-icon class="text-18 mx-2" name="mail-outline"></ion-icon>
         </label>
         <input type="checkbox" id="open-contact--form" hidden class="open-contact--input" />
-        <label for="open-contact--form" class="modal-overlay hidden fixed inset-0 bg-gray-900/50 z-40"></label>
+        <label for="open-contact--form" class="mgi_modal__overlay hidden fixed inset-0 bg-gray-900/50 z-40"></label>
         <div
-          class="modal-form opacity-0 bg-white w-[600px] fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] rounded-xl z-50"
+          class="mgi_modal__form opacity-0 bg-white w-[600px] fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] rounded-xl z-50"
         >
           <label
             for="open-contact--form"
@@ -1234,14 +1120,10 @@
             <p>Have any questions? Send us a message.</p>
           </div>
           <form class="p-8">
-            <input
-              type="text"
-              placeholder="Full Name"
-              class="p-3 w-full border border-slate-500 mb-7 outline-primary"
-            />
-            <input type="text" placeholder="Email" class="p-3 w-full border border-slate-500 mb-7 outline-primary" />
-            <input type="text" placeholder="Phone" class="p-3 w-full border border-slate-500 mb-7 outline-primary" />
-            <input type="text" placeholder="Message" class="p-3 w-full border border-slate-500 mb-7 outline-primary" />
+            <input type="text" placeholder="Full Name" class="mgi_modal__form-input" />
+            <input type="text" placeholder="Email" class="mgi_modal__form-input" />
+            <input type="text" placeholder="Phone" class="mgi_modal__form-input" />
+            <input type="text" placeholder="Message" class="mgi_modal__form-input" />
             <button
               class="py-3 px-5 flex items-center bg-white border-2 border-gray-700 hover:bg-gray-700 hover:text-white rounded-full disabled:opacity-50"
               disabled
@@ -1252,61 +1134,63 @@
           </form>
         </div>
       </footer>
-      <div class="fixed left-0 top-[30%] translate-y-[-50%] w-[300px] hidden md:block">
+      <section class="mgi_widget">
         <input type="checkbox" id="open-widget" class="color-widget--input" hidden />
-        <div class="color-widget bg-gray-800 relative w-[300px] px-4 py-2">
-          <label for="open-widget" class="absolute top-[9px] right-[11px] text-24 text-white z-10 cursor-pointer">
-            <ion-icon name="settings-outline"></ion-icon>
-          </label>
-          <h4 class="text-20 text-white ml-8">OPTION PANEL</h4>
-          <div class="absolute top-full left-0 w-[80%] bg-white p-5 shadow-md">
-            <a
-              href=""
-              class="block w-[200px] text-center px-4 py-2 mx-auto mt-8 bg-gray-800 text-white hover:text-black hover:bg-white border border-gray-800 transition-all"
-              >BUY EPOINT</a
-            >
-            <p class="mx-auto text-center my-6">CHANGE COLOR</p>
-            <ul class="grid grid-cols-6">
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-blue-500"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-red-600"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-green-600"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-yellow-400"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-purple-500"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-pink-500"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-blue-500"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-red-600"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-green-600"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-yellow-400"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-purple-500"></a>
-              </li>
-              <li class="p-1">
-                <a href="" class="w-[26px] h-[26px] block bg-pink-500"></a>
-              </li>
-            </ul>
+        <div class="color-widget fixed left-0 top-[30%] translate-y-[-50%] hidden md:inline-block">
+          <div class="bg-gray-800 relative w-[300px] px-4 py-2">
+            <label for="open-widget" class="absolute top-[9px] right-[11px] text-24 text-white z-10 cursor-pointer">
+              <ion-icon name="settings-outline"></ion-icon>
+            </label>
+            <h4 class="text-20 text-white ml-8">OPTION PANEL</h4>
+            <div class="absolute top-full left-0 w-[80%] bg-white p-5 shadow-md">
+              <a
+                href=""
+                class="block w-[200px] text-center px-4 py-2 mx-auto mt-8 bg-gray-800 text-white hover:text-black hover:bg-white border border-gray-800 transition-all"
+                >BUY EPOINT</a
+              >
+              <p class="mx-auto text-center my-6">CHANGE COLOR</p>
+              <ul class="grid grid-cols-6">
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-blue-500"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-red-600"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-green-600"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-yellow-400"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-purple-500"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-pink-500"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-blue-500"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-red-600"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-green-600"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-yellow-400"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-purple-500"></a>
+                </li>
+                <li class="p-1">
+                  <a href="" class="w-[26px] h-[26px] block bg-pink-500"></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
     <div class="fixed bottom-8 right-8">
       <a href="#" class="w-10 h-10 bg-gray-500 flex items-center justify-center text-white text-18 rounded-full"
@@ -1316,10 +1200,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/slick.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init()

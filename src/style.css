@@ -5,4 +5,52 @@
   .btn-primary {
     @apply py-[12px] px-8 bg-primary text-white font-semibold rounded-full shadow-md hover:bg-[#222] focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
   }
+  .mgi_header__nav-item--link {
+    @apply flex items-center justify-between py-2 uppercase text-white text-xs hover:text-primary font-semibold;
+  }
+  .mgi_header__nav-link {
+    @apply font-semibold uppercase text-sm hover:text-primary transition-colors p-4;
+  }
+  .mgi_header__nav-dropdown {
+    @apply hidden absolute top-11 left-0 bg-black p-4 w-48;
+  }
+  .mgi_header__cart-item {
+    @apply flex items-center justify-between border-t-[1px] border-white pt-4;
+  }
+  .mgi_header__cart-item--btn {
+    @apply font-bold text-16 text-white bg-red-800 w-5 h-5 flex items-center justify-center rounded-full;
+  }
+  .mgi_side-nav__social {
+    @apply w-[40px] h-[40px] mr-2 rounded-full border border-white flex items-center justify-center hover:bg-primary;
+  }
+  .mgi_top-slides {
+    @apply flex flex-col items-center justify-center h-full px-4 md:mx-[70px];
+  }
+  .mgi_top-slides__heading {
+    @apply text-white text-[48px] font-extrabold uppercase mb-5 text-center md:text-8xl;
+  }
+  .mgi_top-slides__desc {
+    @apply hidden leading-8 font-medium text-white mb-7 text-center md:block;
+  }
+  .mgi_modal__form-input {
+    @apply p-3 w-full border border-slate-500 mb-7 outline-primary;
+  }
+  .mgi_bottom__footer-social {
+    @apply text-14 text-white hover:text-primary;
+  }
+  .mgi_underline__heading {
+    @apply absolute w-16 h-1 bottom-[-40px] left-[50%] translate-x-[-50%] bg-primary;
+  }
+  .mgi_footer__link {
+    @apply text-gray_primary text-13 p-[6px] flex items-center hover:text-primary;
+  }
+  .mgi_services__item {
+    @apply w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center mb-5;
+  }
+  .mgi_services__item-title {
+    @apply relative text-18 font-medium mb-5 after:content-[''] after:absolute after:bottom-[-20px] after:left-0 after:w-[60px] after:border-2 after:border-primary;
+  }
+  .mgi_services__item-content {
+    @apply mt-12 font-light text-14 text-gray-700 leading-6;
+  }
 }
