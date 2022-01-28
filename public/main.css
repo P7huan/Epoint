@@ -28,7 +28,7 @@
   opacity: 1;
 }
 .mgi_side-nav__base::-webkit-scrollbar {
-  width: 4px;
+  width: 2px;
 }
 .mgi_nav__mobile-base {
   transform: translateX(-100%);
