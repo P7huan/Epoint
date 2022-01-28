@@ -423,6 +423,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 100%;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -506,8 +518,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(51 153 255 / var(--tw-bg-opacity));
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   padding-left: 2rem;
   padding-right: 2rem;
   font-weight: 600;
@@ -600,7 +612,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(153 27 27 / var(--tw-bg-opacity));
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -609,8 +621,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mgi_side-nav__social {
   margin-right: 0.5rem;
   display: flex;
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
@@ -644,7 +656,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mgi_top-slides__heading {
   margin-bottom: 1.25rem;
   text-align: center;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
   --tw-text-opacity: 1;
@@ -685,7 +697,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .mgi_bottom__footer-social {
-  font-size: 14px;
+  font-size: 0.875rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -697,7 +709,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mgi_underline__heading {
   position: absolute;
-  bottom: -40px;
+  bottom: -2.5rem;
   left: 50%;
   height: 0.25rem;
   width: 4rem;
@@ -711,7 +723,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
   align-items: center;
   padding: 6px;
-  font-size: 13px;
+  font-size: 0.8125rem;
   --tw-text-opacity: 1;
   color: rgb(174 173 173 / var(--tw-text-opacity));
 }
@@ -736,13 +748,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mgi_services__item-title {
   position: relative;
   margin-bottom: 1.25rem;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
 .mgi_services__item-title::after {
   position: absolute;
-  bottom: -20px;
+  bottom: -1.25rem;
   left: 0px;
   width: 60px;
   border-width: 2px;
@@ -754,11 +766,49 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mgi_services__item-content {
   margin-top: 3rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.mgi_side-nav__label {
+  margin-left: 1rem;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.mgi_side-nav__label:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 153 255 / var(--tw-text-opacity));
+}
+
+.mgi_close__label {
+  display: inline-flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 153 255 / var(--tw-bg-opacity));
+  font-size: 1.5rem;
 }
 
 .fixed {
@@ -938,10 +988,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -1022,10 +1068,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.inline-flex {
-  display: inline-flex;
-}
-
 .grid {
   display: grid;
 }
@@ -1040,10 +1082,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .h-\[64px\] {
@@ -1082,12 +1120,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 26px;
 }
 
-.w-\[80\%\] {
-  width: 80%;
+.h-10 {
+  height: 2.5rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-full {
@@ -1144,6 +1182,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[26px\] {
   width: 26px;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .max-w-full {
@@ -1252,10 +1294,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.375rem;
 }
 
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -1279,11 +1317,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-\[\#111\] {
   --tw-border-opacity: 1;
   border-color: rgb(17 17 17 / var(--tw-border-opacity));
-}
-
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .border-primary {
@@ -1311,14 +1344,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(34 34 34 / var(--tw-bg-opacity));
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 153 255 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 153 255 / var(--tw-bg-opacity));
 }
 
 .bg-gray-900 {
@@ -1464,15 +1497,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-20 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .text-12 {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .text-18 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .text-sm {
@@ -1486,7 +1519,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-30 {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .text-xs {
@@ -1495,15 +1528,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-13 {
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .text-16 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .text-14 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .text-\[12px\] {
@@ -1515,11 +1548,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-22 {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 
 .text-40 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .text-\[36px\] {
@@ -1527,7 +1560,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-36 {
-  font-size: 36px;
+  font-size: 	2.25rem;
 }
 
 .text-7xl {
@@ -1536,15 +1569,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .text-24 {
-  font-size: 24px;
-}
-
-.font-extrabold {
-  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .font-semibold {
@@ -1647,14 +1680,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .transition-all {
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-colors {
-  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1768,7 +1793,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .md\:text-40 {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 

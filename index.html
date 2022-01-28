@@ -33,11 +33,7 @@
               <div class="mgi_nav__mobile-base fixed top-0 bottom-0 left-0 w-[80%] bg-[#222] z-10 px-4 py-2">
                 <div class="flex items-center justify-between">
                   <span class="text-gray-300 text-20">MENU</span>
-                  <label
-                    for="nav_mobile"
-                    class="text-white font-extrabold text-2xl bg-primary w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
-                    ><ion-icon name="close-outline"></ion-icon
-                  ></label>
+                  <label for="nav_mobile" class="mgi_close__label"><ion-icon name="close-outline"></ion-icon></label>
                 </div>
                 <div>
                   <input
@@ -483,17 +479,13 @@
                 </div>
               </li>
               <li class="relative mgi_header__nav">
-                <label
-                  for="mgi_side-nav"
-                  class="cursor-pointer mgi_side-nav__label border border-gray-300 font-semibold uppercase text-sm hover:text-primary transition-colors p-2 flex items-center ml-4"
+                <label for="mgi_side-nav" class="mgi_side-nav__label"
                   ><ion-icon class="text-lg font-semibold" name="menu-outline"></ion-icon
                 ></label>
                 <input type="checkbox" hidden class="mgi_side-nav__open" id="mgi_side-nav" />
                 <div class="mgi_side-nav__base fixed w-[370px] bg-[#222] top-0 h-full right-0 p-5 overflow-y-auto z-10">
-                  <label
-                    class="cursor-pointer bg-primary w-10 h-10 inline-flex items-center justify-center rounded-3xl"
-                    for="mgi_side-nav"
-                    ><ion-icon class="text-2xl text-white" name="close-outline"></ion-icon
+                  <label class="mgi_close__label" for="mgi_side-nav"
+                    ><ion-icon class="text-white" name="close-outline"></ion-icon
                   ></label>
                   <div class="my-6">
                     <h5 class="font-medium text-20 text-white mb-4">About Me</h5>
