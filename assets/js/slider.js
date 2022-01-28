@@ -1,65 +1,66 @@
-var sliders = document.querySelectorAll('.carousel')
-
-window.addEventListener('resize', () => {
-  for (let i = 0; i < sliders.length; i++) {
-    setWrapperWidth(sliders[i])
-  }
-})
-
-for (let i = 0; i < sliders.length; i++) {
-  let slider = sliders[i].querySelector('.slider')
-  let wrapper = slider.querySelector('.wrapper')
-
-  setWrapperWidth(sliders[i])
-
-  // prev/next event listeners
-  let navR = sliders[i].querySelector('nav .right')
-  let navL = sliders[i].querySelector('nav .left')
-
-  slider.addEventListener('scroll', () => {
-    if (slider.scrollLeft === 0) navL.classList.add('disabled')
-    else navL.classList.remove('disabled')
-
-    if (slider.scrollLeft >= wrapper.clientWidth - slider.clientWidth) navR.classList.add('disabled')
-    else navR.classList.remove('disabled')
+const body = document.querySelector('.mgi__project__body')
+const sliders = document.querySelector('.mgi__project__slider')
+const slickslider = document.querySelectorAll('.mgi__project__slider-item')
+const slicknextBtn = document.querySelector('.slick-next')
+const slickprevBtn = document.querySelector('.slick-prev')
+document.addEventListener('DOMContentLoaded', function () {
+  //reponsive
+  window.addEventListener('resize', function () {
+    clearInterval(autoplay)
+    count = 0
+    if (window.innerWidth >= 992) {
+      make_slide(4)
+    } else if (window.innerWidth >= 768) {
+      make_slide(2)
+    } else {
+      make_slide(1)
+    }
   })
 
-  if (navR)
-    navR.addEventListener('click', (e) => {
-      navL.classList.remove('disabled')
-      transition(slider, 0, slider.clientWidth, 'right', () => {
-        if (slider.scrollLeft >= wrapper.clientWidth - slider.clientWidth) {
-          navR.classList.add('disabled')
-        }
-      })
-    })
+  const media = [window.matchMedia('(min-width:992px)'), window.matchMedia('(min-width:768px)')]
+  if (media[0].matches) {
+    make_slide(4)
+  } else if (media[1].matches) {
+    make_slide(2)
+  } else {
+    make_slide(1)
+  }
+})
+function make_slide(amountSlideAppear) {
+  const widthItemAndMargin = body.offsetWidth / amountSlideAppear
 
-  if (navL)
-    navL.addEventListener('click', (e) => {
-      navR.classList.remove('disabled')
-      transition(slider, 0, slider.clientWidth, 'left', () => {
-        if (slider.scrollLeft == 0) navL.classList.add('disabled')
-      })
-    })
-}
+  let widthAllBox = widthItemAndMargin * slickslider.length
+  sliders.style.width = `${widthAllBox}px`
+  slickslider.forEach((element) => {
+    element.style = 'padding:0 10px'
+    element.style.width = `${widthItemAndMargin}px`
+  })
+  //handle slide btn
+  let count = 0
+  let spacing = widthAllBox - widthItemAndMargin * amountSlideAppear
 
-function transition(el, from, to, dir, cb) {
-  let inc = from
-  let spd = 20
-  let interval = setInterval(() => {
-    if (inc >= to) {
-      clearInterval(interval)
-      spd = to - inc
-      cb() // callback
+  autoplay = setInterval(() => {
+    count += widthItemAndMargin
+    if (count > spacing) {
+      count = 0
     }
-    el.scrollLeft = dir === 'right' ? el.scrollLeft + spd : el.scrollLeft - spd
-    inc += spd
-  }, 8)
-}
-
-function setWrapperWidth(sliderWrapper) {
-  let slider = sliderWrapper.querySelector('.slider')
-  let wrapper = slider.querySelector('.wrapper')
-  let slides = wrapper.querySelectorAll('.slide')
-  wrapper.style.width = slides.length * slides[0].clientWidth + 'px'
+    sliders.style.transform = `translateX(${-count}px)`
+    sliders.style.transition = '1s'
+  }, 5000)
+  slicknextBtn.addEventListener('click', function () {
+    count += widthItemAndMargin
+    if (count > spacing) {
+      count = 0
+    }
+    sliders.style.transform = `translateX(${-count}px)`
+    sliders.style.transition = '1s'
+  })
+  slickprevBtn.addEventListener('click', function () {
+    count -= widthItemAndMargin
+    if (count < 0) {
+      count = spacing
+    }
+    sliders.style.transform = `translateX(${-count}px)`
+    sliders.style.transition = '1s'
+  })
 }

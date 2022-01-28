@@ -27,6 +27,9 @@
   transform: translateX(0);
   opacity: 1;
 }
+.mgi_side-nav__base::-webkit-scrollbar {
+  width: 4px;
+}
 .mgi_nav__mobile-base {
   transform: translateX(-100%);
   transition: all 0.4s ease-in-out;
@@ -144,4 +147,7 @@ ul .dot.active {
 }
 .mgi_modal__form {
   display: none;
+}
+.mgi_logo__slider::-webkit-scrollbar {
+  width: 0;
 }
