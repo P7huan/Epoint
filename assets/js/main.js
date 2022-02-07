@@ -205,14 +205,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function make_slide3(amountSlideAppear) {
   const widthLastedItemAndMargin = lastedContainer.offsetWidth / amountSlideAppear
-
   let widthLastedAllBox = widthLastedItemAndMargin * lastedSlideItem.length
   lastedSliders.style.width = `${widthLastedAllBox}px`
   lastedSlideItem.forEach((element) => {
     element.style = 'padding:0 10px'
     element.style.width = `${widthLastedItemAndMargin}px`
   })
-  //handle slide btn
   let countlasted = 0
   let spacinglasted = widthLastedAllBox - widthLastedItemAndMargin * amountSlideAppear
 
@@ -236,13 +234,6 @@ function bodyoverflow() {
 }
 function removeoverflow() {
   x.className = 'no-overflow'
-}
-function resizePC() {
-  window.open(
-    'http://127.0.0.1:5500/index.html',
-    '_blank',
-    'toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=1280,height=987',
-  )
 }
 function resizeTablet() {
   window.open(
