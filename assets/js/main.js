@@ -160,7 +160,6 @@ function make_slide2(amountSlideAppear) {
   commentSlideItem.forEach((element) => {
     element.style.width = `${widthCommentItemAndMargin}px`
   })
-  //handle slide btn
   let countcomment = 0
   let spacingcomment = widthCommentAllBox - widthCommentItemAndMargin * amountSlideAppear
 
@@ -223,6 +222,7 @@ function make_slide3(amountSlideAppear) {
     lastedSliders.style.transition = '1s'
   }, 5000)
 }
+
 // Resize
 var x = document.getElementsByClassName('mgi__main')
 function bodyoverflow() {
