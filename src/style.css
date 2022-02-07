@@ -18,7 +18,7 @@
     @apply flex items-center justify-between border-t-[1px] border-white pt-4;
   }
   .mgi_header__cart-item--btn {
-    @apply font-bold text-16 text-white bg-red-800 w-5 h-5 flex items-center justify-center rounded-full;
+    @apply font-bold text-base text-white bg-red-800 w-5 h-5 flex items-center justify-center rounded-full;
   }
   .mgi_side-nav__social {
     @apply w-10 h-10 mr-2 rounded-full border border-white flex items-center justify-center hover:bg-primary;
@@ -27,7 +27,7 @@
     @apply flex flex-col items-center justify-center h-full px-4 md:mx-[70px];
   }
   .mgi_top-slides__heading {
-    @apply text-white text-48 font-extrabold uppercase mb-5 text-center md:text-8xl;
+    @apply text-white text-5xl font-extrabold uppercase mb-5 text-center md:text-8xl;
   }
   .mgi_top-slides__desc {
     @apply hidden leading-8 font-medium text-white mb-7 text-center md:block;
@@ -36,36 +36,104 @@
     @apply p-3 w-full border border-slate-500 mb-7 outline-primary;
   }
   .mgi_bottom__footer-social {
-    @apply text-14 text-white hover:text-primary;
+    @apply text-sm text-white hover:text-primary;
   }
   .mgi_underline__heading {
     @apply absolute w-16 h-1 -bottom-10 left-[50%] translate-x-[-50%] bg-primary;
   }
   .mgi_footer__link {
-    @apply text-gray_primary text-13 p-[6px] flex items-center hover:text-primary;
+    @apply text-gray_primary text-xs p-[6px] flex items-center hover:text-primary;
   }
   .mgi_services__item {
     @apply w-[60px] h-[60px] rounded-full bg-primary flex items-center justify-center mb-5;
   }
   .mgi_services__item-title {
-    @apply relative text-18 font-medium mb-5 after:content-[''] after:absolute after:-bottom-5 after:left-0 after:w-[60px] after:border-2 after:border-primary;
+    @apply relative text-lg font-medium mb-5 after:content-[''] after:absolute after:-bottom-5 after:left-0 after:w-[60px] after:border-2 after:border-primary;
   }
   .mgi_services__item-content {
-    @apply mt-12 font-light text-14 text-gray-700 leading-6;
+    @apply mt-12 font-light text-base text-gray-700 leading-6;
   }
   .mgi_side-nav__label {
     @apply cursor-pointer  border border-gray-300 font-semibold uppercase text-sm hover:text-primary transition-colors p-2 flex items-center ml-4;
   }
   .mgi_close__label {
-    @apply cursor-pointer text-24 bg-primary w-10 h-10 inline-flex items-center justify-center rounded-3xl;
+    @apply cursor-pointer text-2xl bg-primary w-10 h-10 inline-flex items-center justify-center rounded-3xl;
+  }
+  .mgi_modal__form {
+    @apply opacity-0 bg-white w-[600px] fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] rounded-xl z-50;
+  }
+  .btn-disable {
+    @apply py-3 px-5 flex items-center bg-white border-2 border-gray-700 hover:bg-gray-700 hover:text-white rounded-full disabled:opacity-50;
+  }
+  .slick-arrow {
+    @apply absolute top-96 text-2xl cursor-pointer;
+  }
+  .mgi_testimonials {
+    @apply max-w-6xl mx-auto my-20 px-5 overflow-hidden;
+  }
+  .mgi_testimonials__slider {
+    @apply flex items-start justify-center mt-8 py-9;
+  }
+  .mgi_testimonials__slider-item {
+    @apply flex items-start px-4;
+  }
+  .mgi_product {
+    @apply container max-w-6xl mx-auto py-20 overflow-hidden relative;
+  }
+  .mgi_product__slider {
+    @apply flex mt-20 w-full;
+  }
+  .mgi_testimonials__content {
+    @apply text-lg font-light text-gray-600 leading-7 mb-6;
+  }
+  .mgi_testimonials__author {
+    @apply font-semibold text-gray-800 mb-[6px];
+  }
+  .mgi_brand__slider {
+    @apply flex items-center;
+  }
+  .mgi_brand__slider-item {
+    @apply w-[140px] mx-6;
+  }
+  .mgi_section__heading {
+    @apply text-center font-medium text-4xl text-[#333];
+  }
+  .mgi_about__list {
+    @apply flex items-center justify-start;
+  }
+  .mgi_about__list-icon {
+    @apply text-5xl text-primary mr-3;
+  }
+  .mgi_resize__list {
+    @apply grid grid-cols-2 sm:grid-cols-4 gap-4 border border-gray-400  rounded-md overflow-hidden;
+  }
+  .mgi_resize__list-item {
+    @apply text-base font-normal text-center cursor-pointer p-2 hover:bg-slate-700;
+  }
+  .mgi_resize__icon {
+    @apply block text-base py-2 px-4 border border-gray-400 ml-2 rounded-md hover:bg-slate-700;
+  }
+  .mgi_resize {
+    @apply font-semibold flex items-center p-5 bg-[#272d39] text-white;
+  }
+  .mgi_news {
+    @apply py-20 bg-[#f7f7f7];
+  }
+  .mgi_news__container {
+    @apply max-w-6xl mx-auto px-5 overflow-hidden;
+  }
+  .mgi_news__slider {
+    @apply flex items-center mt-20;
   }
 }
+
 @layer base {
   body {
     font-family: 'Poppins', sans-serif;
   }
   * {
     scroll-behavior: smooth;
+    box-sizing: border-box;
   }
   html {
     font-size: 100%;

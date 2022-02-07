@@ -1,6 +1,14 @@
 .mgi_header__nav:hover .mgi_header__nav-dropdown {
   display: block;
 }
+.mgi_header__nav-dropdown::after {
+  position: absolute;
+  content: '';
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 30px;
+}
 .sticky {
   background: #fff;
   color: #222;
@@ -108,21 +116,6 @@ ul .dot.active {
 .search-checkbox--input:checked ~ .search-base {
   display: block;
   opacity: 1;
-}
-.slick-arrow {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-}
-.slick-next {
-  right: -30px;
-  font-size: 30px;
-  font-weight: 600;
-}
-.slick-prev {
-  left: -30px;
-  font-size: 30px;
-  font-weight: 600;
 }
 .flex-slider {
   display: flex !important;
