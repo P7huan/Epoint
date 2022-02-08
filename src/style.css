@@ -60,7 +60,7 @@
     @apply cursor-pointer text-2xl bg-primary w-10 h-10 inline-flex items-center justify-center rounded-3xl;
   }
   .mgi_modal__form {
-    @apply opacity-0 bg-white min-w-[300px] md:max-w-[600px] fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] rounded-xl z-50;
+    @apply opacity-0 bg-white min-w-[400px] md:max-w-[600px] fixed top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] rounded-xl z-50;
   }
   .btn-disable {
     @apply py-3 px-5 flex items-center bg-white border-2 border-gray-700 hover:bg-gray-700 hover:text-white rounded-full disabled:opacity-50;
@@ -126,7 +126,6 @@
     @apply flex items-center mt-20;
   }
 }
-
 @layer base {
   body {
     font-family: 'Poppins', sans-serif;
