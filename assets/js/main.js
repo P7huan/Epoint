@@ -237,21 +237,21 @@ function removeoverflow() {
 }
 function resizeTablet() {
   window.open(
-    'http://127.0.0.1:5500/index.html',
+    'https://p7huan.github.io/Epoint/',
     '_blank',
     'toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=993,height=987',
   )
 }
 function resizeTabletxs() {
   window.open(
-    'http://127.0.0.1:5500/index.html',
+    'https://p7huan.github.io/Epoint/',
     '_blank',
     'toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=768,height=987',
   )
 }
 function resizeMobile() {
   window.open(
-    'http://127.0.0.1:5500/index.html',
+    'https://p7huan.github.io/Epoint/',
     '_blank',
     'toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=450,height=987',
   )
